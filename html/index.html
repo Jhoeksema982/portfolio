@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/portofolio website/css/style.css">
+    <script src="../scripts/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../scripts/anime.js" defer></script>
+    <script src="../scripts/ToTopButton.js"></script>
+</head>
+
+<body class="min-h-screen bg-[#233831] font-sec scroll-smooth no-scroll">
+    <nav class="fixed w-full bg-[#2C4B40] backdrop-blur-sm shadow-md z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="../images/image-removebg-preview (1).png" alt="Logo" class="w-30 h-28">
+                </a>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html"
+                        class="text-white hover:text-primary hover:font-semibold font-poppins flex items-center gap-1">Home</a>
+                    <a href="#about"
+                        class="text-white hover:text-primary font-poppins hover:font-semibold flex items-center gap-1">About</a>
+                    <a href="#work" id="projects-link"
+                        class="text-white hover:text-primary font-poppins hover:font-semibold flex items-center gap-1">Projects</a>
+                    <a href="#contact-section" id="contact-link"
+                        class="text-white hover:text-primary font-poppins hover:font-semibold flex items-center gap-1">Contact</a>
+                </div>
+
+                <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 mt-4">
+                <a href="index.html"
+                    class="block text-white hover:text-gray-400 hover:font-semibold font-poppins">Home</a>
+                <a href="#about" class="block text-white hover:text-gray-400 font-poppins hover:font-semibold">About</a>
+                <a href="#projects"
+                    class="block text-white hover:text-gray-400 font-poppins hover:font-semibold">Projects</a>
+                <a href="contact.html"
+                    class="block text-white hover:text-gray-400 font-poppins hover:font-semibold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="flex flex-col justify-center items-center bg-cover bg-center relative h-[60vh] sm:h-[100vh]">
+            <h1 class="ml10 text-[#8FDCC2] font-bold text-6xl sm:text-7xl md:text-8xl">
+                <span class="text-wrapper">
+                    <span class="letters">I'm Joey.</span>
+                </span>
+            </h1>
+            <p class="text-xl text-white text-center max-w-2xl mt-4">
+                I'm a learning software developer at Bit Academy with experience in front-end and back-end development.
+                Let's build something amazing together!
+            </p>
+            <button id="learn-more"
+                class="mt-10 bg-[#8FDCC2] hover:bg-[#598B7A] text-[#233831] text-lg font-semibold py-3 px-6 rounded transition-transform duration-300">
+                Learn More
+            </button>
+
+            <a href="#"
+                class="absolute bottom-8 text-[#8FDCC2] hover:text-[#598B7A] transition-transform duration-300 hidden sm:block"
+                aria-label="Scroll Down">
+                <svg class="w-10 h-10 animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div id="about" class="grid grid-cols-1 md:grid-cols-12 h-auto">
+        <div class="col-span-12 md:col-span-5 md:pl-16 flex justify-center md:justify-end pb-12">
+            <img src="../images/image.webp" alt="2d cartoon"
+                class="w-[E00px] h-[300px] sm:w-[384px] sm:h-[358px] object-cover">
+        </div>
+        <div class="col-span-12 md:col-span-7 px-8 md:px-16">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl text-[#8FDCC2]">I'm a learning software developer at the
+                software development Bit Academy.</h1>
+            <p class="text-xl pt-8 text-[#D0EAE1]">For the past 1.5 years, I have been studying at the Bit Academy.
+                During this time, I've learned how to code with many languages and have become proficient mainly in
+                front-end development, but also in back-end development.</p>
+            <p class="text-xl pt-8 text-[#D0EAE1]">My goal is to become a great software developer and create many
+                websites for companies and individuals.</p>
+        </div>
+    </div>
+
+
+    <div class="flex justify-center py-24">
+        <div class="bg-[#234138] rounded-none sm:rounded-[50px] p-8 md:p-32 shadow-lg max-w-[1400px] w-full h-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-16">
+                <div class="space-y-5">
+                    <p class="text-3xl sm:text-4xl font-bold pb-4 text-[#598B7A]">01</p>
+                    <h3 class="text-2xl sm:text-3xl font-semibold text-[#8FDCC2]">Figma</h3>
+                    <p class="text-lg sm:text-xl leading-6 text-[#D0EAE1]">
+                        I sketch wireframes and make prototypes. Talking through tactile designs existing in the browser
+                        is worth its weight. Design tools only carry you so far; the rest should be realized with a link
+                        my team can rally around.
+                    </p>
+                </div>
+                <div class="space-y-5">
+                    <p class="text-3xl sm:text-4xl font-bold pb-4 text-[#598B7A]">02</p>
+                    <h3 class="text-2xl sm:text-3xl font-semibold text-[#8FDCC2]">Tailwind</h3>
+                    <p class="text-lg sm:text-xl leading-6 text-[#D0EAE1]">
+                        Good design is not created in a vacuum but rather in a shared space.
+                        It must be facilitated and iterated upon as a team. I aim to include stakeholders
+                        in my design process and create a collaborative environment that welcomes and encourages
+                        feedback.
+                    </p>
+                </div>
+                <div class="space-y-5">
+                    <p class="text-3xl sm:text-4xl font-bold pb-4 text-[#598B7A]">03</p>
+                    <h3 class="text-2xl sm:text-3xl font-semibold text-[#8FDCC2]">Javascript</h3>
+                    <p class="text-lg sm:text-xl leading-6 text-[#D0EAE1]">
+                        I sketch wireframes and make prototypes. Talking through tactile designs existing in the browser
+                        is worth its weight. Design tools only carry you so far; the rest should be realized with a link
+                        my team can rally around.
+                    </p>
+                </div>
+                <div class="space-y-5">
+                    <p class="text-3xl sm:text-4xl font-bold pb-4 text-[#598B7A]">04</p>
+                    <h3 class="text-2xl sm:text-3xl font-semibold text-[#8FDCC2]">PHP</h3>
+                    <p class="text-lg sm:text-xl leading-6 text-[#D0EAE1]">
+                        I sketch wireframes and make prototypes. Talking through tactile designs existing in the browser
+                        is worth its weight. Design tools only carry you so far; the rest should be realized with a link
+                        my team can rally around.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="work" class="py-12 sm:px-12">
+        <div class="flex flex-row items-center justify-center">
+            <h1 class="text-4xl font-semibold mx-8 pb-9 text-[#8FDCC2]">My projects</h1>
+        </div>
+        <div class="grid grid-cols-12 gap-7 mt-10 mb-10">
+            <div class="col-span-12 md:col-span-4 group" data-filter="openbaar">
+                <a href="https://github.com/daveymunters87/DeepDive-2024-2025-2"
+                    class="block relative bg-black text-white rounded-lg overflow-hidden shadow-lg w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105">
+                    <div class="relative h-72 bg-cover bg-center"
+                        style="background-image: url('../images/kimwebsite.webp');">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-500 ease-in-out group-hover:bg-opacity-40">
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex flex-col justify-end p-6">
+                        <h3
+                            class="text-xl font-semibold text-white transition-transform duration-500 ease-in-out transform group-hover:translate-y-[-2px]">
+                            Kim stelling fotografie
+                        </h3>
+                        <p
+                            class="text-sm mt-1 text-gray-200 transition-opacity duration-500 ease-in-out group-hover:opacity-80">
+                            deep dive project winner
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-span-12 md:col-span-4 group" data-filter="openbaar">
+                <a href="https://eindprojectjoey.netlify.app/">
+                    <div
+                        class="relative bg-black text-white rounded-lg overflow-hidden shadow-lg w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105">
+                        <div class="relative h-72 bg-cover bg-center"
+                            style="background-image: url('../images/webshopscreenshot.webp');">
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-500 ease-in-out group-hover:bg-opacity-40">
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 flex flex-col justify-end p-6">
+                            <h3
+                                class="text-xl font-semibold text-white transition-transform duration-500 ease-in-out transform group-hover:translate-y-[-2px]">
+                                Anime figure webshop
+                            </h3>
+                            <p
+                                class="text-sm mt-1 text-gray-200 transition-opacity duration-500 ease-in-out group-hover:opacity-80">
+                                My front-end project
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="privé-card col-span-12 md:col-span-4 group" data-filter="prive">
+                <div
+                    class="relative bg-[#8FDCC2] text-white rounded-lg overflow-hidden shadow-lg w-full transform transition-transform duration-500 ease-in-out group-hover:scale-105">
+                    <div class="relative h-72 bg-cover bg-center">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-500 ease-in-out group-hover:bg-opacity-40">
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex flex-col justify-end p-6">
+                        <h3
+                            class="text-xl font-semibold text-white transition-transform duration-500 ease-in-out transform group-hover:translate-y-[-2px]">
+                            Coming soon!
+                        </h3>
+                        <p
+                            class="text-sm mt-1 text-gray-200 transition-opacity duration-500 ease-in-out group-hover:opacity-80">
+                            Unkown
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="text-center text-4xl sm:text-5xl md:text-6xl text-[#8FDCC2] font-bold pb-8 sm:py-8">PICTURES OF THE MONTH
+    </h1>
+
+    <div class="images grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 p-8 bg-[#1E3932]">
+        <div class="relative col-span-12 sm:col-span-6 lg:col-span-8 h-[400px] sm:h-[500px] lg:h-[542px] group">
+            <img class="h-full w-full object-cover rounded-2xl" src="../images/natuur.webp" alt="natuur">
+            <div
+                class="absolute bottom-4 left-4 bg-[#233831] bg-opacity-100 text-white py-2 px-4 rounded-lg opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+                <p class="text-sm font-medium">the mountains, France</p>
+            </div>
+        </div>
+        <div class="relative col-span-12 sm:col-span-6 lg:col-span-4 h-[400px] sm:h-[500px] lg:h-[542px] group">
+            <picture>
+                <img class="h-full w-full object-cover rounded-2xl" src="../images/hond.webp" alt="hond">
+            </picture>
+            <div
+                class="absolute bottom-4 left-4 bg-[#233831] bg-opacity-100 text-white py-2 px-4 rounded-lg opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+                <p class="text-sm font-medium">sofie the cute dog</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact-section" class="bg-[#233831] pt-12">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-5xl font-extrabold text-center text-white">Contact Me</h2>
+            <p class="mb-4 lg:mb-12 font-light text-center text-[#8FDCC2] sm:text-xl">Do u want to get in contact with
+                me? Write an email here!</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-[#8FDCC2]">Your email</label>
+                    <input type="email" id="email"
+                        class="text-gray-900 text-sm rounded-lg border-2 border-[#8FDCC2] focus:ring-2 focus:ring-[#8FDCC2] block w-full p-2.5 bg-white dark:text-white"
+                        placeholder="name@gmail.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-[#8FDCC2]">Subject</label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-sm text-gray-900 bg-white rounded-lg border-2 border-[#8FDCC2] focus:ring-2 focus:ring-[#8FDCC2]"
+                        placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-[#8FDCC2]">Your message</label>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border-2 border-[#8FDCC2] focus:ring-2 focus:ring-[#8FDCC2]"
+                        placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit"
+                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#8FDCC2] sm:w-fit hover:bg-[#6EC79B] focus:ring-4 focus:outline-none focus:ring-[#8FDCC2]">Send
+                    message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md bg-[#8FDCC2] hover:bg-[#8FDCC2] text-white text-lg font-semibold transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path d="M12 4l8 8h-6v8h-4v-8H4l8-8z" />
+        </svg>
+        <span class="sr-only">Go to top</span>
+    </button>
+
+    <footer class="pt-32 pb-12">
+        <div class="max-w-7xl mx-auto px-8 flex justify-between items-center text-[#D0EAE1]">
+            <div>
+                <p class="text-lg font-semibold hidden sm:block">@2024 Joey Hoeksema</p>
+            </div>
+
+            <div class="flex space-x-4 sm:space-x-8 md:space-x-16 pr-24 sm:pr-36">
+                <div>
+                    <h3 class="text-[#8FDCC2] text-lg font-semibold">Elsewhere</h3>
+                    <ul class="mt-2 space-y-4">
+                        <li><a href="#" class="hover:underline">Figma</a></li>
+                        <li><a href="https://github.com/Jhoeksema982" class="hover:underline">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/joey-hoeksema-b6389b341/"
+                                class="hover:underline">LinkedIn</a></li>
+                        <li><a href="#" class="hover:underline">CV</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[#8FDCC2] text-lg font-semibold">Contact</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Message</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/anime.js" defer></script>
+    <script src="../scripts/ToTopButton.js"></script>
+</body>
+
+</html>
